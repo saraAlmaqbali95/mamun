@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-[#EDF2F7] relative">
+   <header>
+        <nav class=" border-gray-200 border-b-2 px-2 sm:px-4 py-2.5 rounded">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="../assets/img/logo.png" class="mr-3 h-10 sm:h-9" alt="mamun Logo">
+                </a>
+                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 ">Log
+                            In</a>
+
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0">Sign
+                                up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   </header>
+
+
+   <section class="bg-white shadow-sm rounded-md w-[400px] min-h-fit  m-auto py-10 px-3 absolute top-[15rem] right-0 left-0">
+
+    <div class="text-3xl mb-3 text-center font-bold text-gray-700 leading-tight">Are You Live Customer?</div>
+    <div class="text-md text-center font-normal text-gray-600 ">If No, Do not worry we have got you covered</div>
+
+    <div class="flex flex-row justify-around mt-5 ">
+        <a type="submit" 
+            class="focus:outline-none border w-1/3 border-transparent py-2 px-5 rounded-lg shadow-sm text-center text-purple-800 border-purple-700 font-medium hover:shadow-md">Yes</a>
+            <button type="button" data-modal-toggle="crypto-modal"
+                class="focus:outline-none border w-1/3 border-transparent py-2 px-5 rounded-lg shadow-sm text-center text-purple-800 border-purple-700 font-medium hover:shadow-md">No</button>
+    </div>
+
+
+   </section>
+
+<!-- Main modal -->
+<div id="crypto-modal" tabindex="-1"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center"
+    aria-modal="true" role="dialog">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button"
+                class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                data-modal-toggle="crypto-modal">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <!-- Modal header -->
+            <div class="py-4 px-6 rounded-t border-b dark:border-gray-600">
+                <h3 class="text-base font-semibold text-gray-900 lg:text-xl dark:text-white">
+                    Download liv app
+                </h3>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6">
+                <p class="text-sm text-center font-normal text-gray-500 dark:text-gray-400">It will not take long.</p>
+                    <div class="items-center m-auto w-20 h-20 mt-4">
+                        <img src="../assets/img/Liv-Logo.png" alt="" srcset="">
+                    </div>
+                <ul class="my-4 space-y-3">
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-3 text-base font-boldtext-white text-gray-900 bg-white rounded-lg border border-green-400 ">
+                            <svg class="mr-2 -ml-1 w-5 h-5" viewBox="0 0 256 274" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M188.813 178.875C221.273 161.052 245.88 147.471 248.001 146.415C254.786 142.807 261.793 133.257 248.001 125.839C243.548 123.506 219.573 110.348 188.813 93.3789L146.171 136.444L188.813 178.874V178.875Z"
+                                    fill="#FFD900" />
+                                <path
+                                    d="M146.171 136.444L10.394 273.287C13.581 273.709 17.179 272.864 21.421 270.532C30.327 265.657 124.739 214.098 188.813 178.885L146.171 136.444Z"
+                                    fill="#F43249" />
+                                <path
+                                    d="M146.171 136.444L188.813 93.5911C188.813 93.5911 30.971 7.45011 21.421 2.36511C17.823 0.234113 13.791 -0.398887 10.183 0.234113L146.171 136.444V136.444Z"
+                                    fill="#00EE76" />
+                                <path
+                                    d="M146.171 136.444L10.183 0.233887C4.664 1.50989 0 6.38589 0 16.3579V257.163C0 266.29 3.609 272.864 10.394 273.498L146.171 136.444Z"
+                                    fill="#00D3FF" />
+                            </svg>
+                            <span class="flex-1 ml-3 whitespace-nowrap">with Google Play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-3 text-base font-boldtext-white text-gray-900 bg-white border border-gray-700 order rounded-lg">
+                            <svg class="mr-2 -ml-1 w-5 h-5" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="currentColor"
+                                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+                                </path>
+                            </svg>
+                            <span class="flex-1 ml-3 whitespace-nowrap">with Apple Store</span>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#"
+                        class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
+                        <svg aria-hidden="true" class="mr-2 w-3 h-3" focusable="false" data-prefix="far"
+                            data-icon="question-circle" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z">
+                            </path>
+                        </svg>
+                        Why do I need to connect wiith Liv?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>

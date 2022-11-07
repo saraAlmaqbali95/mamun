@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../node_modules/flowbite/dist/flowbite.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-[#EDF2F7] relative">
+    <header>
+        <nav>
+            <div class="relative flex justify-between h-9 m-0">
+    
+                <div class="items-center">
+                    <aside class="w-18 md:w-64 fixed top-0 bottom-0 lg:left-0 hidden md:block" aria-label="Sidebar">
+                        <div
+                            class="min-h-full flex pl-3 flex-col justify-between overflow-y-auto py-4 md:px-3  bg-[#2d3142]  dark:bg-gray-800 ">
+                            <ul class="space-y-2">
+                                <li class="mb-5">
+                                    <img src="../../assets/img/Liv-Logo.png" class="mr-5 logo hidden md:block" alt=""
+                                        srcset="">
+                                </li>
+                                <li>
+                                    <a href="Dashboard.html"
+                                        class="flex items-center p-2 text-base font-normal text-white rounded transition duration-75 hover:bg-purple-600">
+                                        <img src="../../assets/img/homewhite.png" width="24" height="24" alt="" srcset="">
+    
+                                        <span class="ml-3 hidden md:block">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Insight.html"
+                                        class="flex items-center p-2 text-base font-normal text-white rounded transition duration-75 hover:bg-purple-600">
+                                        <img src="../../assets/img/chart-pie-alt-white.png" width="24" height="24" alt=""
+                                            srcset="">
+                                        <span class="flex-1 ml-3 whitespace-nowrap hidden md:block">Insight</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center p-2 text-base font-normal text-white rounded transition duration-75 hover:bg-purple-600">
+                                        <img src="../../assets/img/settings-white.png" width="24" height="24" alt="" srcset="">
+                                        <span class="flex-1 ml-3 whitespace-nowrap hidden md:block">Setting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+                                <li>
+                                    <a href="login.html"
+                                        class="flex items-center p-2 text-base font-normal rounded transition duration-75 hover:bg-purple-600  group">
+                                        <img src="../../assets/img/exit.png" width="22" height="22" alt="" srcset="">
+                                        <span class="ml-3 hidden md:block text-white">Logout</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center p-2 text-base font-normal rounded transition duration-75 group">
+                                        <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24.75 13.5C24.75 15.2902 24.0388 17.0071 22.773 18.273C21.5071 19.5388 19.7902 20.25 18 20.25C16.2098 20.25 14.4929 19.5388 13.227 18.273C11.9612 17.0071 11.25 15.2902 11.25 13.5C11.25 11.7098 11.9612 9.9929 13.227 8.72703C14.4929 7.46116 16.2098 6.75 18 6.75C19.7902 6.75 21.5071 7.46116 22.773 8.72703C24.0388 9.9929 24.75 11.7098 24.75 13.5Z"
+                                                fill="White" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18ZM18 2.25C15.034 2.25016 12.1283 3.08782 9.61741 4.66656C7.10649 6.24531 5.09239 8.50097 3.80692 11.1739C2.52145 13.8469 2.01687 16.8285 2.35125 19.7756C2.68562 22.7227 3.84537 25.5155 5.697 27.8325C7.2945 25.2585 10.8112 22.5 18 22.5C25.1887 22.5 28.7033 25.2563 30.303 27.8325C32.1546 25.5155 33.3144 22.7227 33.6488 19.7756C33.9831 16.8285 33.4785 13.8469 32.1931 11.1739C30.9076 8.50097 28.8935 6.24531 26.3826 4.66656C23.8717 3.08782 20.966 2.25016 18 2.25Z"
+                                                fill="White" />
+                                        </svg>
+                                        <span class="ml-3 hidden md:block text-white font-bold">Username</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+    
+        </nav>
+    </header>
+    
+    <!-- Body scetion -->
+    <section class="ml-5 md:ml-[18rem] mt-4  md:mt-1 mr-5 space-y-7">
+        <!-- Titels  -->
+        <div class="flex justify-between md:items-baseline  items-center">
+            <div>
+                <h1 class="text-[18px] font-bold md:text-[40px] text-[#2d3142] ">Welcome Back</h1>
+                <h4 class="text-[10px] md:text-xl font-extralight text-[#2d3142]">Track and Manage Loans
+                </h4>
+            </div>
+        </div>
+   
+      
+
+        <div class="bg-white shadow-sm rounded-md w-[600px] min-h-fit  m-auto py-10 px-3 absolute left-[35rem] top-[4rem] " style="width: 500px;">
+            <div class="text-lg mb-1 text-center font-bold text-gray-700 leading-tight">Take a loan for invoice financing in a few seconds</div>
+            <!-- <div class="text-sm text-center font-normal text-gray-500">Your loan is 10,000 AED </div> -->
+            <form method="post" id="f" action="" class="flex flex-col justify-center items-center space-y-6">
+                <div class="w-full">
+                    <label for="amount" class="block mb-2 text-sm font-medium text-gray-900">Invoice Amount:</label>
+                    <input type="text" id="amount" name="amount" class="bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5" placeholder="OMR" required="">
+                </div>
+                <div class="w-full">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Invoice Date:</label>
+                    <input type="text" id="email" name="email" class="bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5" placeholder="DD/MM/YYYY" required="">
+                </div>
+                <div class="w-full">
+                    <label for="num" class="block mb-2 text-sm font-medium text-gray-900">Invoice Number:</label>
+                    <input type="text" id="num" name="num" class="bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5" placeholder="123456789" required="">
+                </div>
+                <div class="w-full">
+                    <label for="number" class="block mb-2 text-sm font-medium text-gray-900">Goods/services:</label>
+                    <input type="text" id="number" name="number" class="bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5" placeholder="Good and Services" required="">
+                </div>
+                <!-- <div class="w-full">
+                    <label for="IdNum" class="block mb-2 text-sm font-medium text-gray-900">ID Number:</label>
+                    <input type="text" id="IdNum" name="IdNum" class="bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5" placeholder="000 000 000" required="">
+                </div> -->
+                <div class="w-full">
+                    <label for="Duration" class="block mb-2 text-sm font-medium text-gray-900">Buyer:</label>
+                    <select id="Duration" form="f" name="Duration" class="bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5">
+                        <option selected="">Choose Buyer</option>
+                        <option value="3"><img src="../../assets/img/" alt="" srcset=""> PDO</option>
+                        <option value="6">OQ</option>
+                        <option value="12">OXY</option>
+                        <option value="24">OOMCO</option>
+            
+                    </select> 
+                </div>
+                <div class="w-full">
+                    <label for="CrNum" class="block mb-2 text-sm font-medium text-gray-900">Company CR Number:</label>
+                    <input type="text" id="CrNum" name="CrNum" class="bg-gray-50 border border-gray-700 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5" placeholder="000 000 000" required="">
+                </div>
+                <a href="/pdo/dashboard/verified" class="focus:outline-none border w-25  border-purple-700 py-2 px-5 rounded-lg shadow-sm text-center text-purple-700 font-medium">Upload Invoice</a>
+                <a href="/mamun/dashboard/pending">
+                <button type="button" class="focus:outline-none border w-full border-transparent py-2 px-5 rounded-lg shadow-sm text-center text-white bg-purple-700 hover:bg-purple-600 font-medium">Apply</button>
+                </a>
+            </form>
+        </div>
+
+
+    </section>
+    <footer class="p-4 fixed bottom-0 left-[50rem] md:px-2 md:py-2">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 Powered <a href="#" class="hover:underline"> by Mamun. </a>
+        </span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-[#EDF2F7] relative">
+    <header>
+        <nav>
+            <div class="relative flex justify-between h-9 m-0">
+    
+                <div class="items-center">
+                    <aside class="w-18 md:w-64 fixed top-0 bottom-0 lg:left-0 hidden md:block" aria-label="Sidebar">
+                        <div
+                            class="min-h-full flex pl-3 flex-col justify-between overflow-y-auto py-4 md:px-3  bg-[#2d3142]  dark:bg-gray-800 ">
+                            <ul class="space-y-2">
+                                <li class="mb-5">
+                                    <img src="../../assets/img/Liv-Logo.png" class="mr-5 logo hidden md:block" alt=""
+                                        srcset="">
+                                </li>
+                                <li>
+                                    <a href="Dashboard.html"
+                                        class="flex items-center p-2 text-base font-normal text-white rounded transition duration-75 hover:bg-purple-600">
+                                        <img src="../../assets/img/homewhite.png" width="24" height="24" alt="" srcset="">
+    
+                                        <span class="ml-3 hidden md:block">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Insight.html"
+                                        class="flex items-center p-2 text-base font-normal text-white rounded transition duration-75 hover:bg-purple-600">
+                                        <img src="../../assets/img/chart-pie-alt-white.png" width="24" height="24" alt=""
+                                            srcset="">
+                                        <span class="flex-1 ml-3 whitespace-nowrap hidden md:block">Insight</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center p-2 text-base font-normal text-white rounded transition duration-75 hover:bg-purple-600">
+                                        <img src="../../assets/img/settings-white.png" width="24" height="24" alt="" srcset="">
+                                        <span class="flex-1 ml-3 whitespace-nowrap hidden md:block">Setting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+                                <li>
+                                    <a href="login.html"
+                                        class="flex items-center p-2 text-base font-normal rounded transition duration-75 hover:bg-purple-600  group">
+                                        <img src="../../assets/img/exit.png" width="22" height="22" alt="" srcset="">
+                                        <span class="ml-3 hidden md:block text-white">Logout</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center p-2 text-base font-normal rounded transition duration-75 group">
+                                        <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24.75 13.5C24.75 15.2902 24.0388 17.0071 22.773 18.273C21.5071 19.5388 19.7902 20.25 18 20.25C16.2098 20.25 14.4929 19.5388 13.227 18.273C11.9612 17.0071 11.25 15.2902 11.25 13.5C11.25 11.7098 11.9612 9.9929 13.227 8.72703C14.4929 7.46116 16.2098 6.75 18 6.75C19.7902 6.75 21.5071 7.46116 22.773 8.72703C24.0388 9.9929 24.75 11.7098 24.75 13.5Z"
+                                                fill="White" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18ZM18 2.25C15.034 2.25016 12.1283 3.08782 9.61741 4.66656C7.10649 6.24531 5.09239 8.50097 3.80692 11.1739C2.52145 13.8469 2.01687 16.8285 2.35125 19.7756C2.68562 22.7227 3.84537 25.5155 5.697 27.8325C7.2945 25.2585 10.8112 22.5 18 22.5C25.1887 22.5 28.7033 25.2563 30.303 27.8325C32.1546 25.5155 33.3144 22.7227 33.6488 19.7756C33.9831 16.8285 33.4785 13.8469 32.1931 11.1739C30.9076 8.50097 28.8935 6.24531 26.3826 4.66656C23.8717 3.08782 20.966 2.25016 18 2.25Z"
+                                                fill="White" />
+                                        </svg>
+                                        <span class="ml-3 hidden md:block text-white font-bold">Username</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+    
+        </nav>
+    </header>
+    
+    <!-- Body scetion -->
+    <section class="ml-5 md:ml-[18rem] mt-4  md:mt-3 mr-5 space-y-7">
+        <!-- Titels  -->
+        <div class="flex justify-between md:items-baseline  items-center">
+            <div>
+                <h1 class="text-[18px] font-bold md:text-[40px] text-[#2d3142] ">Welcome Back</h1>
+                <h4 class="text-[10px] md:text-xl font-extralight text-[#2d3142]">Track and Manage Loans
+                </h4>
+            </div>
+        </div>
+
+
+        <h1 class="text-[16px] font-semibold md:text-[20px] text-[#2d3142] ">Detailed Offer View</h1>
+        <div class="bg-white w-1/2 m-auto py-5 px-6 mb-4 ">
+             <div class="flex flex-row justify-center space-x-3">
+                <img src="../../assets/img/floward-logo.svg" class="w-[100px] alt="" srcset="">
+                 <h1 class="">Company Name</h1>
+            </div>
+            <div class="flex justify-center mt-5">
+                <h1 class="text-lg font-bold"> Date posted: <span class="font-normal">28/8/2022</span></h1>
+            </div>
+
+
+            <div class="flex justify-center flex-col mt-6">
+                <div class="flex flex-row justify-start space-x-4 ">
+                    <h1 class="text-base font-bold"> Requested amount: <span class="font-normal">5500 AED</span></h1>
+                    <h1 class="text-base font-bold"> Requested credit duration: <span class="font-normal"> 48 months </span></h1>
+                    <h1 class="text-base font-bold"> Offered amount: <span class="font-normal">5500 AED</span></h1>
+                </div>
+                
+                <div class="flex flex-row justify-start space-x-4 my-6 ">
+                    <h1 class="text-base font-bold"> Offered credit durationt: <span class="font-normal">48 months</span></h1>
+                    <h1 class="text-base font-bold"> Profit rate: <span class="font-normal">5 %</span></h1>
+                    <h1 class="text-base font-bold"> Monthly installment: <span class="font-normal">304.251</span></h1>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="Dashboard.html" class="focus:outline-none border w-25  border-purple-700 py-2 px-5 rounded-lg shadow-sm text-center text-purple-700 font-medium">Cancel</a>
+                <a herf="Submit.html" class="focus:outline-none border w-25  border-transparent py-2 px-5 rounded-lg shadow-sm text-center text-white bg-purple-700 hover:bg-purple-600 font-medium">Submit</a>
+            </div>
+        </div>
+        <div class="bg-white w-1/2 m-auto py-5 px-6 ">
+            <div>
+                <img src="../../assets/img/floward-logo.svg" class="w-[200px] items-center m-auto alt="" srcset="">
+            </div>
+            
+            <div class="flex justify-center mt-5">
+                <h1 class="text-lg font-bold"> Date posted: <span class="font-normal">28/8/2022</span></h1>
+            </div>
+
+
+            <div class="flex justify-center flex-col mt-6">
+                <div class="flex flex-row justify-start space-x-4 ">
+                    <h1 class="text-base font-bold"> Requested amount: <span class="font-normal">5500 AED</span></h1>
+                    <h1 class="text-base font-bold"> Requested credit duration: <span class="font-normal"> 48 months </span></h1>
+                    <h1 class="text-base font-bold"> Offered amount: <span class="font-normal">5500 AED</span></h1>
+                </div>
+                
+                <div class="flex flex-row justify-start space-x-4 my-6 ">
+                    <h1 class="text-base font-bold"> Offered credit durationt: <span class="font-normal">48 months</span></h1>
+                    <h1 class="text-base font-bold"> Profit rate: <span class="font-normal">5 %</span></h1>
+                    <h1 class="text-base font-bold"> Monthly installment: <span class="font-normal">304.251</span></h1>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="Dashboard.html" class="focus:outline-none border w-25  border-purple-700 py-2 px-5 rounded-lg shadow-sm text-center text-purple-700 font-medium">Cancel</a>
+                <a herf="Submit.html" class="focus:outline-none border w-25  border-transparent py-2 px-5 rounded-lg shadow-sm text-center text-white bg-purple-700 hover:bg-purple-600 font-medium">Submit</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fixed p-4 bottom-0 left-[50rem]  md:px-2 md:py-2">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 Powered <a href="#"
+                class="hover:underline">by Mamun. </a>
+        </span>
+    </footer>
+</body>
+
+</html>

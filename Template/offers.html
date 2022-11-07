@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-[#EDF2F7] relative">
+   <header>
+        <nav class=" border-gray-200 border-b-2 px-2 sm:px-4 py-2.5 rounded">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="../assets/img/logo.png" class="mr-3 h-10 sm:h-9" alt="mamun Logo">
+                </a>
+                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 ">Log
+                            In</a>
+
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0">Sign
+                                up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   </header>
+
+
+   <section class="bg-white shadow-sm rounded-md w-[500px] min-h-fit  m-auto py-10 px-3 absolute left-0 right-0 top-[12rem] ">
+    <div class="pl-5" id="mydiv">
+    <div class="text-lg mb-2 text-center font-bold text-gray-700 leading-tight">We're calculating your offer</div>
+    <div class="text-md text-center font-normal text-gray-600 mb-5"> your offers on their way </div>
+    <div role="status" class="max-w-sm animate-pulse mb-4">
+        <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+           <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+        <span class="sr-only">Loading...</span>
+    </div>
+    </div>
+
+    <div class="pl-5 hidden" id="test">
+        <div class="text-lg mb-2 text-center font-bold text-gray-700 leading-tight">Your Offer is</div>
+        <div class="text-md text-center font-normal text-gray-600 mb-5"></div>
+        <div class="max-w-sm mb-4">
+            <div class="h-2.5 w-48 mb-4"></div>
+            <div class="h-2  max-w-[360px] mb-4 font-bold">Requested credit duration: <span class="font-normal"> 48 months </span></div>
+            <div class="h-2  max-w-[330px] mb-4 font-bold">Offered amount: <span class="font-normal">5500 AED</span></div>
+            <div class="h-2  max-w-[360px] mb-4 font-bold">Offered credit durationt: <span class="font-normal">48 months</span></div>
+            <div class="h-2  max-w-[330px] mb-4 font-bold">Profit rate: <span class="font-normal">5 %</span></div>
+            <div class="h-2  max-w-[360px] mb-4 font-bold">Monthly installment: <span class="font-normal">304.251</span></span></div>
+        </div>
+        <div class="flex justify-center space-x-4 mt-5">
+            <a href="Dashboard.html"
+                class="focus:outline-none border w-25  border-purple-700 py-2 px-5 rounded-lg shadow-sm text-center text-purple-700 font-medium">Cancel</a>
+            <button type="button" data-modal-toggle="popup-modal" herf="Submit.html"
+                class="focus:outline-none border w-25  border-transparent py-2 px-5 rounded-lg shadow-sm text-center text-white bg-purple-700 hover:bg-purple-600 font-medium">Submit</button>
+        </div>
+    </div>
+
+
+    <footer class="p-4 fixed bottom-0 left-[50rem] md:px-2 md:py-2">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 Powered <a href="#" class="hover:underline">by Mamun. </a>
+        </span>
+    </footer>
+
+    <div id="popup-modal" tabindex="-1"
+        class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full justify-center items-center hidden"
+        aria-modal="true" role="dialog">
+        <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="p-6 text-center">
+                    <svg aria-hidden="true" class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Offer Submitted Successfully</h3>
+                    <button data-modal-toggle="popup-modal" type="button"
+                        class="text-white w-1/2 bg-purple-700 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm inline-block items-center px-5 py-2.5 text-center">
+                        Back Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+   </section>
+
+</body>
+<script>
+    setTimeout(() => {
+            $('#mydiv').fadeOut('slow');
+            $("#test").fadeIn("slow");
+
+        }, 5000);
+</script>
+</html>

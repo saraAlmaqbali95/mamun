@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+    width: 100px;
+    /* height: 57.79px; */
+}
+.animated-mamun svg {
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+.mamun {
+    stroke: #3c0174;
+    stroke-width: 2px;
+    stroke-dashoffset: -2000;
+    stroke-dasharray: 2000;
+    animation-name: mamun;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mamun {
+    0% {
+        stroke-dashoffset: -2000;
+        stroke: #b17fe0;
+    }
+
+    30% {
+        stroke: #7624c3;
+    }
+
+    50% {
+        stroke: #3c0174;
+    }
+
+    70% {
+        stroke: #7624c3;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #3c0174;
+    }
+}
+
+._100-image-width svg {
+    transform: translate3d(0px, 0px, 0px);
+}

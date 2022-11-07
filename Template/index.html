@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Css -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
+    <title>Dashboard | TMdone </title>
+</head>
+
+<body>
+<!--Container -->
+<div class="mx-auto bg-grey-400">
+    <!--Screen-->
+    <div class="min-h-screen flex flex-col">
+        <!--Header Section Starts Here-->
+        <header class="bg-nav">
+            <div class="flex justify-between h-20 bg-purple-500">
+                <div class="p-1 mx-3 inline-flex items-center">
+                    <i class="fas fa-bars pr-2 text-white" onclick="sidebarToggle()"></i>
+
+                    <img src="../assets/img/tmdone.png" class="mr-3 h-16 sm:h-9 w-26 ml-4" alt="Logo" />
+                    <span class="text-white font-bold ml-12 text-xl">Seller's Dashboard</span>
+                </div>
+                <div class="p-1 flex flex-row items-center">
+
+
+                    <!-- <img onclick="profileToggle()" class="inline-block h-8 w-8 rounded-full" src="https://avatars0.githubusercontent.com/u/4323180?s=460&v=4" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.3em" height="2.3m" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="#3F3F48" d="M16 8a5 5 0 1 0 5 5a5 5 0 0 0-5-5Z"/><path fill="#3F3F48" d="M16 2a14 14 0 1 0 14 14A14.016 14.016 0 0 0 16 2Zm7.992 22.926A5.002 5.002 0 0 0 19 20h-6a5.002 5.002 0 0 0-4.992 4.926a12 12 0 1 1 15.985 0Z"/></svg>
+                    <a href="#" onclick="profileToggle()" class="text-white font-bold p-2 no-underline hidden md:block lg:block mr-4">Business LLC</a>
+                    <div id="ProfileDropDown" class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r">
+                        <ul class="list-reset">
+                          
+                          <li><hr class="border-t mx-2 border-grey-ligght"></li>
+                          <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!--/Header-->
+
+        <div class="flex flex-1">
+            <!--Sidebar-->
+           
+            <aside id="sidebar" class="bg-side-nav w-1/2 md:w-1/6 lg:w-1/6 border-r border-side-nav hidden md:block lg:block">
+                <div class="min-h-full flex pl-3 flex-col justify-between overflow-y-auto py-4 md:px-3  bg-gray-50 rounded dark:bg-gray-800 ">
+                    <ul class="list-reset flex flex-col">
+                        <li class=" w-full h-full py-3  ">
+                            <a href="index.html"
+                               class="flex items-center p-2 text-base font-sans font-hairline hover:font-normal text-sidcolor rounded-lg text-nav-item no-underline ">
+                                
+                                <svg width="24" height="24" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.5 1.5H12V15H1.5V1.5ZM18 1.5H28.5V9H18V1.5ZM18 15H28.5V28.5H18V15ZM1.5 21H12V28.5H1.5V21Z"
+                                    stroke="#3a383b" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                                <span class="flex-1 ml-3 whitespace-nowrap md:block text-gray-900">Dashboard</span>
+                            </a>
+
+
+                        </li>
+    
+                        <li>
+                            <a href="index.html"
+                                class="flex items-center p-2 text-base font-sans font-hairline hover:font-normal text-sidcolor rounded-lg text-nav-item no-underline ">
+                                <svg width="26" height="26" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.5 33.49H33.5041L33.5 32.4859C33.4965 31.6156 33.0146 29.5104 31.1271 27.6229C29.2747 25.7705 25.9339 24 20 24C14.0635 24 10.7253 25.7705 8.87289 27.6229C6.98403 29.5118 6.50707 31.6165 6.50003 32.4819L6.49184 33.49H7.5H32.5ZM24.2426 8.25736L23.5663 8.93372L24.2426 8.25736C23.1174 7.13214 21.5913 6.5 20 6.5C18.4087 6.5 16.8826 7.13214 15.7574 8.25736C14.6321 9.38258 14 10.9087 14 12.5C14 14.0913 14.6321 15.6174 15.7574 16.7426C16.8826 17.8679 18.4087 18.5 20 18.5C21.5913 18.5 23.1174 17.8679 24.2426 16.7426C25.3679 15.6174 26 14.0913 26 12.5C26 10.9087 25.3679 9.38258 24.2426 8.25736ZM24.5962 17.0962C23.3772 18.3152 21.7239 19 20 19C18.2761 19 16.6228 18.3152 15.4038 17.0962C14.1848 15.8772 13.5 14.2239 13.5 12.5C13.5 10.7761 14.1848 9.12279 15.4038 7.90381C16.6228 6.68482 18.2761 6 20 6C21.7239 6 23.3772 6.68482 24.5962 7.90381C25.8152 9.12279 26.5 10.7761 26.5 12.5C26.5 14.2239 25.8152 15.8772 24.5962 17.0962ZM34 32.5C34 32.95 33.8904 33.221 33.7773 33.3906C33.6601 33.5664 33.4967 33.6961 33.3028 33.7931C33.105 33.892 32.8951 33.9464 32.7262 33.9745C32.6442 33.9882 32.5779 33.9947 32.5362 33.9977C32.5155 33.9991 32.5013 33.9997 32.4948 33.9999L32.493 34H7.50698C7.50648 34 7.5059 34 7.50524 33.9999C7.49872 33.9997 7.48454 33.9991 7.46383 33.9977C7.42205 33.9947 7.35585 33.9882 7.27377 33.9745C7.10489 33.9464 6.895 33.892 6.69721 33.7931C6.50334 33.6961 6.33989 33.5664 6.22268 33.3906C6.10963 33.221 6 32.95 6 32.5C6 31.5068 6.52554 29.2637 8.51961 27.2696C10.4844 25.3048 13.9609 23.5 20 23.5C26.0391 23.5 29.5156 25.3048 31.4804 27.2696C33.4745 29.2637 34 31.5068 34 32.5Z"
+                                        fill="#3a383b" stroke="#3a383b" stroke-width="2" />
+                                </svg>
+                                <span class="flex-1 ml-3 whitespace-nowrap  md:block text-gray-900">Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html"
+                                class="flex items-center p-2 text-base font-sans font-hairline hover:font-normal text-sidcolor rounded-lg text-nav-item no-underline ">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.25 12.1406H11.8594V3.75001C11.8594 3.64688 11.775 3.56251 11.6719 3.56251H11.0625C9.83134 3.56049 8.61192 3.80194 7.47441 4.27295C6.3369 4.74397 5.30374 5.43525 4.43439 6.30704C3.57824 7.16055 2.89607 8.17226 2.4258 9.28595C1.93643 10.441 1.68532 11.683 1.68751 12.9375C1.6855 14.1687 1.92694 15.3881 2.39796 16.5256C2.86897 17.6631 3.56026 18.6963 4.43205 19.5656C5.2922 20.4258 6.29533 21.1031 7.41095 21.5742C8.56604 22.0636 9.80804 22.3147 11.0625 22.3125C12.2937 22.3145 13.5131 22.0731 14.6506 21.6021C15.7881 21.1311 16.8213 20.4398 17.6906 19.568C18.5508 18.7078 19.2281 17.7047 19.6992 16.5891C20.1886 15.434 20.4397 14.192 20.4375 12.9375V12.3281C20.4375 12.225 20.3531 12.1406 20.25 12.1406ZM16.5399 18.4641C15.8141 19.1842 14.9534 19.754 14.0071 20.1409C13.0607 20.5278 12.0474 20.7242 11.025 20.7188C8.96017 20.7094 7.01955 19.9008 5.55939 18.4406C4.08986 16.9711 3.28126 15.0164 3.28126 12.9375C3.28126 10.8586 4.08986 8.90392 5.55939 7.43439C6.83908 6.1547 8.48673 5.37423 10.2656 5.1961V13.7344H18.8039C18.6235 15.5227 17.836 17.1797 16.5399 18.4641V18.4641ZM22.3125 10.8375L22.2516 10.1766C22.0524 8.01798 21.0938 5.98126 19.5516 4.44376C18.0083 2.90344 15.9758 1.95016 13.8047 1.74845L13.1414 1.68751C13.0313 1.67813 12.9375 1.76251 12.9375 1.87267V10.875C12.9375 10.9781 13.0219 11.0625 13.125 11.0625L22.125 11.0391C22.2352 11.0391 22.3219 10.9453 22.3125 10.8375ZM14.5266 9.47345V3.45939C16.003 3.7684 17.3579 4.49958 18.4266 5.56407C19.4977 6.63282 20.2313 7.9922 20.536 9.45704L14.5266 9.47345Z"
+                                        fill="#3a383b" />
+                                </svg>
+                                <span class="flex-1 ml-3 whitespace-nowrap  md:block text-gray-900">Insight</span>
+                            </a>
+                        </li>
+    
+                    
+                     
+                      
+                    </ul>
+                </div>
+                
+          
+
+            </aside>
+
+           
+            <!--/Sidebar-->
+            <!--Main-->
+            <main class="bg-white-300 flex-1 p-3 overflow-hidden ">
+
+                <div class="flex flex-col">
+                    <!-- Stats Row Starts Here -->
+                    <div class="flex flex-1 flex-col md:flex-row lg:flex-row mx-2 p-4">
+                      
+                        <div class="shadow-lg bg-yellow-lightest border-l-8  border-orange-500 mb-2 p-4 pb-2 md:w-full mx-2 rounded-lg">
+                          
+                           
+                               <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
+                                <li class="pb-3 sm:pb-4">
+                                   <div class="flex items-center space-x-4">
+                                      <div class="flex-shrink-0">
+                                        <img src="../dist/images/one.png" class="mr-3 h-8 sm:h-9 ml-6" alt="" />
+                                    </div>
+                                      <div class="flex-1 min-w-0">
+                                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                            Financing
+                                         </p>
+                                         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                           
+                                            <a href="#" class="text-main-color">Power By Mamun</a>
+                                         </p>
+
+                                       
+                                      </div>
+                                      <div class="px-6 py-2 pb-4 text-center w-96">
+                                        <div class="font-bold  text-xl text-gray-700 uppercase">15000 AED</div>
+                                     </div>
+                                    
+                                   </div>                           
+                                </li>                                
+                             </ul>
+                             
+                        </div>
+
+                    </div>
+                </div>
+               
+                    <!-- /Stats Row Ends Here -->
+
+                    <!-- <div class="px-6 py-2 pb-4 text-center">
+                        <div class="font-bold  text-xl text-gray-700 uppercase">15000 AED</div>
+                    </div> -->
+                   
+
+
+                     
+                      
+                    <!-- Card Sextion Starts Here -->
+                    <div class="flex flex-1 flex-col md:flex-row lg:flex-row mx-2">
+
+                        <!-- card -->
+
+                        <div class="rounded overflow-hidden shadow bg-white mx-2 w-full">
+                            <div class="px-6 py-2 border-b border-light-grey pt-6">
+                                <div class="font-bold  text-sm text-gray-700 uppercase">Sales Per Months</div>
+                            </div>
+
+                            
+<div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+      
+        <thead class="text-xs text-gray-700 uppercase bg-side-nav dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="py-3 px-6 rounded-l-lg">
+                    Months
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Order
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Amount
+                </th>
+                <th scope="col" class="py-3 px-6  rounded-r-lg">
+                    Date
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Jan
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    20
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    8000 AED
+                </td>
+              
+                <td class="py-4 px-6 text-gray-900">
+                    31/1/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700 ">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Feb
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    22
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    6200 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    22/2/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Mar
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    25
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    8500 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    30/3/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apr
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                   15
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    9100 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    28/4/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    May
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    30
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    15000 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    15/5/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Jun
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    20
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    9500 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    8/6/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Jul
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    20
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    8000 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    31/7/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700 ">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Aug
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    22
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    8200 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    22/8/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Sep
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    25
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    8500 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    30/9/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Oct
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                   15
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                   9100 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    8/10/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Nov
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    30
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    9600 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    15/11/2022
+                </td>
+            </tr>
+
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Dec
+                </th>
+                <td class="py-4 px-6 text-gray-900">
+                    20
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800 text-gray-900">
+                    9700 AED
+                </td>
+                <td class="py-4 px-6 text-gray-900">
+                    8/12/2022
+                </td>
+            </tr>
+           
+           
+        
+        
+        </tbody>
+    </table>
+
+  
+      
+</div>
+
+
+                            
+
+                   
+                        </div>
+                        <!-- /card -->
+
+                    </div>
+                    <!-- /Cards Section Ends Here -->
+
+             
+                  
+                </div>
+            </main>
+            <!--/Main-->
+        </div>
+        <!--Footer-->
+        <!-- <footer class="bg-grey-darkest text-white p-2">
+           
+        </footer> -->
+        <!--/footer-->
+
+    </div>
+
+</div>
+<script src="./main.js"></script>
+</body>
+
+</html>
